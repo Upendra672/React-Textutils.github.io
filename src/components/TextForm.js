@@ -59,7 +59,7 @@ export default function TextForm(props) {
       </div>
       <div className={`conatiner bg-${props.mode==='light'?'light':'#151038'} text-${props.mode==='light'?'dark':'light'}`}>
         <h2 className='  py-3 px-3 m-0'>Your Text summmary</h2>
-        <p className=' py-3 px-3 m-0'>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Characters</p>
+        <p className=' py-3 px-3 m-0'>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words and {text.length} Characters</p>
         <p className='  py-3 px-3 m-0'>{0.008 * text.split(" ").length} Minutes Read</p>
         <h2 className=' py-3 px-3 m-0'>Input Preview</h2>
       </div>
