@@ -40,3 +40,15 @@
 .mybox{
   font-size: larger;
 }
+
+.home-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.home-container h1{
+  color: linear-gradient(blue, red, yellow);
+
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function About(props) {
 
@@ -36,7 +36,7 @@ let myStyle = {
 }
 
   return (
-    <div classNameName='container my-5' style={myStyle}>
+    <div className='container my-5' style={myStyle}>
         <h1 className='my-2'>About us</h1>
         <div className="accordion" id="accordionExample">
             <div className="accordion-item">
@@ -76,9 +76,6 @@ let myStyle = {
                 </div>
             </div>
         </div>
-        {/* <div className='container my-2'>
-            <button onClick={toggleStyle} type="button" class="btn btn-primary"> {btntxt} </button>  
-        </div> */}
   </div>
   )
 }
